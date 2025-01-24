@@ -62,7 +62,7 @@ with mlflow.start_run() as run:
     print(f"F1 Score: {f1 * 100:.2f}%")
 
     # Optionally, save the results
-    with open('model_acc/accuracy.txt', 'w') as f:
+    with open('models/accuracy.txt', 'w') as f:
         f.write(f"Accuracy: {accuracy * 100:.2f}%\n")
 
     # Log metrics to MLflow
